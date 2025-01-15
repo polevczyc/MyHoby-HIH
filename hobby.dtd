@@ -1,0 +1,52 @@
+<!ELEMENT cars (car+)>
+	<!ATTLIST cars xmlns:xsi CDATA #IMPLIED xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+
+<!ELEMENT car (make, model, engine, performance, transmission, drivetrain, weight, additional_info, description, external_link)>
+	<!ATTLIST car country (germany|france|italy) #REQUIRED>
+	<!ATTLIST car condition (new|used) #REQUIRED>
+
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+	<!ATTLIST model generation CDATA #IMPLIED>
+
+<!ELEMENT engine (details)>
+	<!ATTLIST engine fuel CDATA #IMPLIED>
+
+<!ELEMENT details (displacement, type, power, torque)>
+<!ELEMENT displacement (#PCDATA)>
+	<!ATTLIST displacement unit (liters) #IMPLIED>
+
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT power (#PCDATA)>
+	<!ATTLIST power unit (hp) #IMPLIED>
+
+<!ELEMENT torque (#PCDATA)>
+	<!ATTLIST torque unit (Nm) #IMPLIED>
+
+<!ELEMENT performance (acceleration, top_speed)>
+<!ELEMENT acceleration (#PCDATA)>
+	<!ATTLIST acceleration unit (seconds) #IMPLIED>
+
+<!ELEMENT top_speed (#PCDATA)>
+	<!ATTLIST top_speed unit (kmh) #IMPLIED>
+
+<!ELEMENT transmission (transmission_type, gears)>
+<!ELEMENT transmission_type (#PCDATA)>
+<!ELEMENT gears (#PCDATA)>
+<!ELEMENT drivetrain (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+	<!ATTLIST weight unit (tons) #IMPLIED>
+
+<!ELEMENT additional_info (body)>
+<!ELEMENT body (exterior, interior)>
+<!ELEMENT exterior (bodyshape, doors, img+)>
+<!ELEMENT interior (seats, img)>
+<!ELEMENT bodyshape (#PCDATA)>
+<!ELEMENT doors (#PCDATA)>
+<!ELEMENT img (#PCDATA)>
+	<!ATTLIST img src CDATA #IMPLIED>
+
+<!ELEMENT seats (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT external_link (#PCDATA)>
+	<!ATTLIST external_link src CDATA #IMPLIED>

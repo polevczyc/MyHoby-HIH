@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cars SYSTEM "hobby.dtd">
+<cars xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="hobby.xsd">
+	<car country="germany" condition="used">
+		<make>Audi</make>
+		<model generation="D2">S8</model>
+		<engine fuel="gasoline">
+			<details>
+				<displacement unit="liters">4.2</displacement>
+				<type>V8</type>
+				<power unit="hp">360</power>
+				<torque unit="Nm">410</torque>
+			</details>
+		</engine>
+		<performance>
+			<acceleration unit="seconds">5.4</acceleration>
+			<top_speed unit="kmh">250</top_speed>
+		</performance>
+		<transmission>
+			<transmission_type>Manual</transmission_type>
+			<gears>6</gears>
+		</transmission>
+		<drivetrain>AWD</drivetrain>
+		<weight unit="tons">1.8</weight>
+		<additional_info>
+			<body>
+				<exterior>
+					<bodyshape>Sedan</bodyshape>
+					<doors>4</doors>
+					<img src="img/audi/audi1.jpg"/>
+					<img src="img/audi/audi2.jpg"/>
+					<img src="img/audi/audi3.jpg"/>
+				</exterior>
+				<interior>
+					<seats>5</seats>
+					<img src="img/audi/audi4.jpg" />
+				</interior>
+			</body>
+		</additional_info>
+		<description>
+			Audi S8 D2 to flagowy model niemieckiego producenta, który zadebiutował w drugiej połowie lat 90. Wprowadzony jako następca Audi V8, S8 D2 był luksusowym sedanem klasy średniej o sportowych osiągach i wyjątkowym stylu. Model ten oferował połączenie elegancji, komfortu i dynamicznych właściwości jazdy, które przyciągały miłośników motoryzacji z całego świata. Silnik to jedna z najważniejszych cech Audi S8. Pod maską tego pojazdu znajdziemy potężny, 4,2-litrowy silnik V8 o mocy wynoszącej 360 KM. Wyposażony w technologię podwójnego doładowania, składającego się z dwóch turbosprężarek, ten silnik zapewniał imponujące przyspieszenie i dynamiczne osiągi. Maksymalny moment obrotowy wynosił 410 Nm, co przekładało się na niezwykłą elastyczność i pewność prowadzenia w różnych warunkach drogowych. Nadwozie auta wyróżniało się charakterystycznymi liniami i proporcjami. Opatrzony nowoczesnymi reflektorami ksenonowymi, charakterystycznym grillem i wyrazistymi zderzakami, ten model prezentował sportowy i elegancki wygląd. Ponadto, aluminiowe elementy nadwozia, takie jak lusterka boczne i listwy ozdobne, dodawały mu wyjątkowego blasku i lekkości. Audi S8 D2 było dostępne w różnych kolorach lakieru, co umożliwiało personalizację i dopasowanie samochodu do indywidualnych preferencji. Wnętrze S8 D2 było równie imponujące jak zewnętrzny design. Kabina pasażerska była obszerna i oferowała wygodne fotele obite skórą, które zapewniały doskonałe wsparcie podczas długich podróży. Wykończenie wnętrza było z najwyższej jakości materiałów, a zastosowane drewniane i metalowe akcenty dodawały elegancji i luksusu. Poza tym, bogate wyposażenie, takie jak system audio marki Bose, klimatyzacja dwustrefowa i zaawansowany system nawigacji, podnosiło komfort podróżowania do najwyższego poziomu. Audi S8 D2 to samochód, który wciąż pozostaje atrakcyjnym wyborem dla miłośników luksusowych sedanów. Jego połączenie sportowych osiągów, wysokiej jakości wykończenia i komfortu podróżowania czyni go niezwykle pożądanym modelem na rynku samochodowym. Jeśli szukasz eleganckiego i dynamicznego pojazdu z lat 90., Audi S8 D2 z pewnością będzie ciekawą opcją do rozważenia.
+		</description>
+		<external_link src="https://www.autoevolution.com/cars/audi-s8-1999.html#aeng_audi-s8-1998-42-v8" />
+	</car>
+	<car country="germany" condition="used">
+		<make>BMW</make>
+		<model generation="E31">8 series</model>
+		<engine fuel="gasoline">
+			<details>
+				<displacement unit="liters">5.6</displacement>
+				<type>V12</type>
+				<power unit="hp">360</power>
+				<torque unit="Nm">550</torque>
+			</details>
+		</engine>
+		<performance>
+			<acceleration unit="seconds">6</acceleration>
+			<top_speed unit="kmh">250</top_speed>
+		</performance>
+		<transmission>
+			<transmission_type>Manual</transmission_type>
+			<gears>6</gears>
+		</transmission>
+		<drivetrain>RWD</drivetrain>
+		<weight unit="tons">1.8</weight>
+		<additional_info>
+			<body>
+				<exterior>
+					<bodyshape>Coupe</bodyshape>
+					<doors>2</doors>
+					<img src="img/bmw/bmw1.jpg"/>
+					<img src="img/bmw/bmw2.jpg"/>
+					<img src="img/bmw/bmw3.jpg"/>
+				</exterior>
+				<interior>
+					<seats>4</seats>
+					<img src="img/bmw/bmw4.jpg" />
+				</interior>
+			</body>
+		</additional_info>
+		<description>
+			BMW serii 8 to luksusowy samochód sportowy produkowany przez niemieckiego producenta w latach 1989-1999. Ten ikoniczny model charakteryzował się eleganckim wyglądem, doskonałymi osiągami i zaawansowanymi rozwiązaniami technicznymi. Seria 8 była symbolem luksusu, wyrafinowania i sportowej mocy. Silnik był jednym z najważniejszych elementów BMW serii 8. Ten model oferował różne warianty silnikowe, w tym najbardziej znany 5,6-litrowy silnik V12, który generował imponującą moc. Oferował on około 380 KM i moment obrotowy wynoszący 550 Nm. Dzięki temu BMW zapewniało dynamiczne przyspieszenie i wysoką prędkość maksymalną, co przyciągało miłośników szybkich i ekscytujących jazd. Nadwozie serii 8 było niezwykle eleganckie i aerodynamiczne. Charakterystyczne linie i proporcje nadawały mu sportowy wygląd, jednocześnie podkreślając luksusową naturę tego modelu. Zastosowane lekkie materiały, takie jak aluminium i włókno węglowe, przyczyniły się do obniżenia wagi i zwiększenia wydajności. Dodatkowo, BMW seria 8 było wyposażone w wiele innowacyjnych rozwiązań aerodynamicznych, takich jak aktywne spojlery, które automatycznie podnoszą się dla poprawy przyczepności i stabilności przy wyższych prędkościach. Wnętrze auta było pełne luksusu i nowoczesnych technologii. Kabina była przestronna, a fotele były wygodne i dostosowane do sportowego charakteru samochodu. Wykończenie wnętrza obejmowało wysokiej jakości materiały, takie jak skóra i drewno, które dodawały elegancji i komfortu. Samochód był również wyposażony w wiele zaawansowanych funkcji, takich jak system audio marki Harman Kardon, klimatyzacja dwustrefowa i zaawansowany system nawigacji. BMW seria 8 (E31) to pojazd, który połączał luksus, sportowe osiągi i zaawansowane technologie. Ten klasyczny model nadal jest podziwiany przez entuzjastów motoryzacji i stanowi ikonę niemieckiego inżynierii. Jeśli szukasz samochodu, który oferuje doskonałą jakość i emocjonujące doświadczenia za kierownicą, BMW seria 8 (E31) może być doskonałym wyborem.
+		</description>
+		<external_link src="https://www.autoevolution.com/cars/bmw-8-series-e31-1989.html#aeng_bmw-8-series-e31-1989-850csi" /> 
+	</car>
+	<car country="germany" condition="used">
+		<make>Mercedes-Benz</make>
+		<model generation="R129">SL</model>
+		<engine fuel="gasoline">
+			<details>
+				<displacement unit="liters">6.0</displacement>
+				<type>V12</type>
+				<power unit="hp">394</power>
+				<torque unit="Nm">570</torque>
+			</details>
+		</engine>
+		<performance>
+			<acceleration unit="seconds">6.1</acceleration>
+			<top_speed unit="kmh">250</top_speed>
+		</performance>
+		<transmission>
+			<transmission_type>Automatic</transmission_type>
+			<gears>5</gears>
+		</transmission>
+		<drivetrain>RWD</drivetrain>
+		<weight unit="tons">2</weight>
+		<additional_info>
+			<body>
+				<exterior>
+					<bodyshape>Roadster</bodyshape>
+					<doors>2</doors>
+					<img src="img/merc/merc1.jpg"/>
+					<img src="img/merc/merc2.jpg"/>
+					<img src="img/merc/merc3.jpg"/>
+				</exterior>
+				<interior>
+					<seats>2</seats>
+					<img src="img/merc/merc4.jpg" />
+				</interior>
+			</body>
+		</additional_info>
+		<description>
+			Mercedes-Benz SL to luksusowy roadster produkowany przez niemieckiego producenta w latach 1989-2001. Ten model zdobył sobie reputację jako symbol klasy, elegancji i doskonałych osiągów. Mercedes-Benz SL R129 łączył w sobie luksusowe wnętrze, dynamiczne silniki i charakterystyczne linie nadwozia, które czyniły go niezwykle atrakcyjnym dla miłośników motoryzacji. Silniki oferowane w Mercedes-Benz SL R129 były jednymi z najmocniejszych i najbardziej zaawansowanych technologicznie jednostek napędowych na rynku. W zależności od wersji, dostępne były różne silniki, w tym potężne 5,0-litrowe V8 i 6,0-litrowe V12. Moc oscylowała od 230 do imponujących 394 KM, a moment obrotowy dochodził do 570 Nm. To zapewniało szybkie przyspieszenie i niesamowitą dynamikę jazdy, co czyniło Mercedes-Benz SL R129 prawdziwym samochodem sportowym. Nadwozie tego modelu było zaprojektowane w sposób, który łączył elegancję z agresywnym wyglądem. Charakterystyczne linie i smukłe proporcje nadawały mu wyjątkową prezencję na drodze. Otwierany dach składany do bagażnika dodawał uroku i nadawał roadsterowi charakteru. Wnęka na dach była wykonana z materiałów takich jak aluminium, co przyczyniało się do obniżenia masy i zwiększenia wydajności pojazdu. Ponadto, Mercedes-Benz SL R129 był wyposażony w innowacyjne rozwiązania aerodynamiczne, które wpływały na stabilność i przyczepność. Wnętrze Mercedes-Benz SL R129 było równie ekskluzywne jak reszta samochodu. Kabina pasażerska była obszerna i oferowała wygodne fotele pokryte skórą. Wykończenie wnętrza było z najwyższej jakości materiałów, a zastosowane drewniane i metalowe akcenty dodawały elegancji i luksusu. Samochód był również wyposażony w zaawansowane systemy audio i nawigacji, które podnosiły komfort i wygodę podróżowania. Mercedes-Benz SL R129 to ikona motoryzacji, która nadal cieszy się uznaniem wielu osób. Jego połączenie luksusu, osiągów i stylowego wyglądu czynią go wyjątkowym samochodem. Jeśli marzysz o luksusowym roadsterze, który oferuje doskonałe doznania za kierownicą, Mercedes-Benz SL R129 może być idealnym wyborem.
+		</description>
+		<external_link src="https://www.autoevolution.com/cars/mercedes-benz-sl-r129-1998.html#aeng_mercedes-benz-sl-r129-1998-600" />
+	</car>
+</cars>

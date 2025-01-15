@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+	<xs:simpleType name="condition_choice">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="new" />
+			<xs:enumeration value="used" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="drivetrain_type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[FRA4]WD"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="body_shape">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Sedan" />
+			<xs:enumeration value="Combi" />
+			<xs:enumeration value="Coupe" />
+			<xs:enumeration value="Cabrio" />
+			<xs:enumeration value="Roadster" />
+			<xs:enumeration value="SUV" />
+			<xs:enumeration value="Hatchback" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="door_seats_number">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="2" />
+			<xs:maxInclusive value="5" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="fuel_type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="gasoline|diesel" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="engine_type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[IVW][0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="link_type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="src" type="xs:anyURI" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="engine_details">
+		<xs:sequence>
+			<xs:element name="details">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="displacement">
+							<xs:complexType mixed="true">
+								<xs:attribute ref="unit" />
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="type" type="engine_type" />
+						<xs:element name="power">
+							<xs:complexType mixed="true">
+								<xs:attribute ref="unit"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="torque">
+							<xs:complexType mixed="true">
+								<xs:attribute ref="unit"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="fuel" type="fuel_type" />
+	</xs:complexType>
+
+	<xs:complexType name="performance_details">
+		<xs:sequence>
+			<xs:element name="acceleration">
+				<xs:complexType mixed="true">
+					<xs:attribute ref="unit"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="top_speed">
+				<xs:complexType mixed="true">
+					<xs:attribute ref="unit"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="transmission_details">
+		<xs:sequence>
+			<xs:element name="transmission_type" type="xs:string" />
+			<xs:element name="gears" type="xs:decimal" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="body_details">
+		<xs:sequence>
+			<xs:element name="exterior">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="bodyshape" type="body_shape" />
+						<xs:element name="doors" type="door_seats_number" />
+						<xs:element name="img" type="link_type" minOccurs="3" maxOccurs="3" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="interior">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="seats" type="door_seats_number" />
+						<xs:element name="img" type="link_type" minOccurs="1" maxOccurs="1" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:attribute name="unit">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="liters" />
+				<xs:enumeration value="hp" />
+				<xs:enumeration value="Nm" />
+				<xs:enumeration value="seconds" />
+				<xs:enumeration value="kmh" />
+				<xs:enumeration value="tons" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	
+	<xs:element name="cars">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="car" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="make">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Audi" />
+										<xs:enumeration value="BMW" />
+										<xs:enumeration value="Mercedes-Benz" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="model">
+								<xs:complexType mixed="true">
+									<xs:attribute name="generation">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:pattern value="[A-Z][0-9]+" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="engine" type="engine_details"/>
+							<xs:element name="performance" type="performance_details"/>
+							<xs:element name="transmission" type="transmission_details"/>
+							<xs:element name="drivetrain" type="drivetrain_type"/>
+							<xs:element name="weight">
+								<xs:complexType mixed="true">
+									<xs:attribute ref="unit"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="additional_info">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="body" type="body_details" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="description" type="xs:string">
+
+							</xs:element>
+							<xs:element name="external_link" type="link_type" />
+						</xs:sequence>
+						<xs:attribute name="country">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="germany" />
+									<xs:enumeration value="france" />
+									<xs:enumeration value="italy" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="condition" type="condition_choice" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

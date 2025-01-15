@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <svg width="450" height="70">
+            <rect width="450" height="70" style="fill:#333"/>
+        </svg>
+        <h1>Samochody z lat 90.</h1>
+        <nav >
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li>
+                    <a id="ulub">Moje ulubione</a>
+                    <ul>
+                        <li><a href="audi.html">Audi</a></li>
+                        <li><a href="bmw.html">Bmw</a></li>
+                        <li><a href="mercedes.html">Mercedes-Benz</a></li>
+                    </ul>
+                </li>
+                <li><a id="contact" href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text">
+            <h2>Co sprawia, że są wyjątkowe?</h2>
+            <p>
+                Lata 90. były wyjątkowym okresem dla przemysłu motoryzacyjnego, w którym wiele wydarzeń i innowacji wpłynęło na kształtowanie się dzisiejszego krajobrazu samochodowego. To dziesięciolecie przyniosło wiele ikonicznych modeli, które do dziś zachwycają miłośników motoryzacji.<br><br>
+
+                W tamtych latach wiele marek samochodowych wprowadziło na rynek nowe modele, które szybko stały się ikonami. Te samochody wyróżniały się swoim charakterystycznym stylem i designem, które były często odważne i innowacyjne. Wzornictwo samochodów z lat 90. często było inspirowane futurystycznymi trendami, co nadawało im wyjątkowy wygląd.<br><br>
+                
+                Jednak to nie tylko wygląd sprawił, że samochody z tego okresu są tak ikoniczne. W latach 90. producenci skupili się również na wprowadzaniu zaawansowanych technologii i innowacji. To wtedy pojawiły się systemy bezpieczeństwa, takie jak poduszki powietrzne, które stały się standardem. Dodatkowo, wiele samochodów z tamtego okresu oferowało zaawansowane systemy audio, nawigację i inne udogodnienia, które w tamtych czasach były niezwykle nowoczesne.<br><br>
+                
+                Autentyczność i trwałość samochodów z lat 90. również przyczyniły się do ich ikonicznego statusu. W tamtych czasach konstrukcja samochodów była często bardziej solidna, a materiały używane do produkcji były trwalsze. Samochody z tamtego okresu często są uznawane za "pewniaki" - wytrzymałe i niezawodne maszyny, które mogą przetrwać wiele lat i przekroczyć wielu właścicieli.<br><br>
+                
+                Jednak najważniejszym powodem, dla którego samochody z lat 90. są nadal tak bardzo cenione, jest ich kultowa reputacja. To w tamtym okresie wiele samochodów zdobyło status ikon, które do dziś są symbolem stylu i prestiżu. Modele, takie jak sedan, coupe, hatchback czy SUV, które pojawiły się na rynku w latach 90., były często pionierami w swojej klasie i wyznacznikami trendów, które trwały przez wiele lat.<br><br>
+                
+                Lata 90. były okresem, w którym motoryzacja przeżywała dynamiczny rozwój i wprowadzała wiele innowacji. Samochody z tamtej dekady są ikoniczne ze względu na swój unikalny design, zaawansowane technologie, trwałość i autentyczność. To pojazdy, które do dziś wzbudzają emocje i są symbolem motoryzacyjnej historii.<br><br>
+
+                Na tej stronie internetowej skupiam się na moich trzech ulubionych niemieckich modelach z tamtego okresu.<br>Zajrzyj do nawigacji pod <a href="#ulub"><b>"Moje ulubione"</b></a>, aby poznać szczegóły.<br><br> Możesz również skontaktować się ze mną poprzez formularz umieszczony w zakładce <a href="#contact"><b>Kontakt</b></a>.
+            </p>
+        </section>
+
+        <section id="gallery">
+            <br>
+            <h4>Galeria zdjęć:</h4>(kliknij, aby powiększyć)<br><br>
+            <div class="thumbnails">
+                <img src="img/BMW-M5.jpg" alt="BMW-M5" data-image="img/BMW-M5.jpg">
+                <img src="img/ferrari.jpg" alt="ferrari" data-image="img/ferrari.jpg">
+                <img src="img/Honda.jpg" alt="honda" data-image="img/Honda.jpg">
+                <img src="img/diablo.jpg" alt="diablo" data-image="img/diablo.jpg">
+                <img src="img/Lexus.jpg" alt="lexus" data-image="img/Lexus.jpg">
+                <img src="img/McLaren.jpg" alt="mclaren" data-image="img/McLaren.jpg">
+                <img src="img/Merc-Evo2.jpg" alt="mercevo" data-image="img/Merc-Evo2.jpg">
+                <img src="img/Mazda.jpg" alt="mazda" data-image="img/Mazda.jpg">
+                <img src="img/opel.jpg" alt="opel" data-image="img/opel.jpg">
+                <img src="img/audi2.jpg" alt="audi" data-image="img/audi2.jpg">
+                <img src="img/honda2.jpg" alt="honda" data-image="img/honda2.jpg">
+                <img src="img/porsche.jpg" alt="porsche" data-image="img/porsche.jpg">
+            </div>
+            <div class="lightbox">
+                <img src="a" alt="Powiększone zdjęcie">
+            </div>
+        </section>
+    
+        <section class="form">
+            <h2>Podziel się z nami swoją pasją</h2>
+            <form action="php.php" method="POST">
+                Pozostaw nam swoje dane kontaktowe!<br>
+                <label for="imie">imię:</label>
+                <input type="text" id="imie" name="imie" required><br>
+            
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="marka">Preferowana marka:</label>
+                <select id="marka" name="marka" required>
+                  <option value="">Wybierz markę</option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="inna">inna</option>
+                </select><br><br>
+            
+                <label for="kolor">Preferowany kolor:</label>
+                <input type="color" id="kolor" name="kolor"><br><br>
+            
+                <label>Jaki jest Twój ulubiony typ samochodu?</label><br>
+                <input type="radio" id="sedan" name="typ" value="sedan">
+                <label for="sedan">Sedan</label><br>
+                <input type="radio" id="kombi" name="typ" value="kombi">
+                <label for="kombi">Kombi</label><br>
+                <input type="radio" id="suv" name="typ" value="suv">
+                <label for="suv">SUV</label><br>
+                <input type="radio" id="hatchback" name="typ" value="hatchback">
+                <label for="hatchback">Hatchback</label><br>
+                <input type="radio" id="coupe" name="typ" value="coupe">
+                <label for="coupe">Coupe</label><br>
+                <input type="radio" id="cabrio" name="typ" value="cabrio">
+                <label for="cabrio">Cabrio</label><br><br>
+            
+                <label for="uwagi">Jakim samochodem jeździsz na co dzień?</label><br>
+                <textarea id="uwagi" name="uwagi" rows="3" cols="30" style="font-size: 22px;"></textarea><br><br>
+            
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+              </form>
+        </section>
+    </main>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var thumbnails = document.querySelectorAll("#gallery .thumbnails img");
+            var lightbox = document.querySelector("#gallery .lightbox");
+            var lightboxImg = document.querySelector("#gallery .lightbox img");
+      
+            thumbnails.forEach(function(thumbnail) {
+                thumbnail.addEventListener("click", function() {
+                    var image = this.getAttribute("data-image");
+                    lightboxImg.src = image;
+                    lightbox.style.display = "flex";
+                    lightbox.classList.add("active");
+                });
+            });
+      
+            lightbox.addEventListener("click", function() {
+                lightbox.style.display = "none";
+                lightbox.classList.add("active");
+            });
+        });
+                
+      </script>
+
+    <footer>
+        <p>Stronę wykonał: 192562 Jakub Polewczyk &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
